@@ -12,7 +12,7 @@ AMORIS's central claim: most AI products optimize for response quality (intellig
 
 ## Research
 
-- [Research](https://amoris.in/research): AMORIS's research program into adaptive human-AI interaction — research themes (Human State, Interaction Dynamics, Agent Behaviour, Organizational Learning, Accountability), canonical models (the interaction model, the research pipeline, the adaptive loop), and open research questions the field hasn't answered yet.
+- [Research](https://amoris.in/research): AMORIS's research program into adaptive human-AI interaction — research themes (Human State, Interaction Dynamics, Agent Behaviour, Organizational Learning, Accountability), canonical models (the interaction model, the research pipeline, the adaptive loop), an evidence timeline grounding AMORIS's approach in external research across four tracks (situated expertise, human-AI complementarity, trust & evidence, conversational drift — citing work including Dreyfus's *What Computers Still Can't Do*, peer-reviewed human-AI complementarity studies, and 2025-2026 research on conversational drift and amplified oversight), and open research questions with AMORIS's working thesis on each.
 
 ## Labs
 
