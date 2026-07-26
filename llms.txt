@@ -1,0 +1,24 @@
+# AMORIS AI Labs
+
+> AMORIS AI Labs builds interaction infrastructure for organizations that use AI. AMORIS sits between humans and AI systems, observing, learning from, and improving every interaction — so both people and AI get measurably better over time. The focus is AI observability, AI accountability, and organizational learning: making AI systems' reasoning, confidence, and decisions explainable and auditable, and turning human-AI interactions into reusable organizational knowledge rather than lost transcripts.
+
+AMORIS's central claim: most AI products optimize for response quality (intelligence, speed, cost, accuracy). AMORIS optimizes for interaction quality instead — trust, judgment, calibration, coherence, and adaptation between a human and an AI system over repeated use.
+
+## Products
+
+- [Intel Echo](https://amoris.in/intel-echo/): An accountability and reasoning-observability layer for AI systems. Detects authority/mandate drift, measures model confidence against evidence, and produces audit-ready explanations of AI decisions. Live prototype.
+- [Sales Echo](https://amoris.in/products.html): An enterprise sales learning layer. Learns from winning human sales conversations, guides reps in real time, and captures tribal knowledge as organizational sales intelligence. Coming soon / enterprise pilot stage.
+- [Products overview](https://amoris.in/products.html): Full breakdown of both products, the AMORIS compounding-intelligence model (Observe → Understand → Learn → Guide → Improve), and what's next (Healthcare Echo, Support Echo, Hiring Echo, Leadership Echo — in research/design).
+
+## Research
+
+- [Research](https://amoris.in/research.html): AMORIS's research program into adaptive human-AI interaction — research themes (Human State, Interaction Dynamics, Agent Behaviour, Organizational Learning, Accountability), canonical models (the interaction model, the research pipeline, the adaptive loop), and open research questions the field hasn't answered yet.
+
+## Labs
+
+- [Labs](https://amoris.in/labs.html): How AMORIS moves from research question to working prototype to production system — current experiments (Sales Echo, Intel Echo, Memory Graph), the lab method, and lab notes/working papers.
+
+## Company
+
+- [Home](https://amoris.in/): AMORIS AI Labs overview — the interaction-infrastructure thesis, the AMORIS architecture (Observe, Learn, Improve, Remember), and the first proof of work in enterprise B2C sales.
+- Contact: hello@amoris.ai
