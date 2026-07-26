@@ -65,7 +65,8 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
 .labs-contact .button-primary{color:var(--ink);background:var(--paper)}
 
 /* Hero */
-.hero{display:grid;grid-template-columns:42% 58%;min-height:540px;align-items:center;padding:48px 0 60px;position:relative;z-index:1}
+.hero{display:grid;grid-template-columns:34% 66%;min-height:540px;align-items:start;padding:48px 0 60px;position:relative;z-index:1}
+.entity-orbit{margin-top:.6em}
 .eyebrow{font-family:var(--mono);font-size:0.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
 .eyebrow span{display:inline-block;width:18px;height:1px;background:var(--accent);vertical-align:middle;margin-right:8px}
 .hero h1{font-family:var(--display);font-size:clamp(3.2rem,4.8vw,5.4rem);font-weight:500;line-height:1.06;letter-spacing:-.02em;margin:0 0 22px;max-width:600px;color:var(--ink)}
@@ -81,7 +82,7 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
 
 /* Hero diagram: real image + real HTML labels overlaid at matching coordinates */
 .entity-orbit{position:relative;min-width:0}
-.amoris-diagram{position:relative;width:100%;aspect-ratio:1600/900}
+.amoris-diagram{position:relative;width:100%;aspect-ratio:1600/900;border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,.1);box-shadow:0 0 0 1px rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.55),0 0 90px rgba(255,255,255,.05)}
 .amoris-diagram picture,.amoris-diagram img{display:block;width:100%;height:100%;object-fit:contain}
 .diagram-label{position:absolute;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--text);text-align:center;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;background:rgba(6,6,7,.82);border-radius:3px;padding:3px 7px;backdrop-filter:blur(2px)}
 .label-human{left:68.2%;top:6.6%;font-size:0.72rem;font-weight:600}
