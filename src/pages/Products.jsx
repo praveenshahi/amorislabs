@@ -6,6 +6,7 @@ import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
 import AmbientBackground from '../components/AmbientBackground.jsx';
 import WaitlistForm from '../components/WaitlistForm.jsx';
+import ContactCTA from '../components/ContactCTA.jsx';
 
 const TABS = [
   { label: 'All products', filter: 'all' },
@@ -43,6 +44,10 @@ export default function Products() {
             <p className="eyebrow"><span /> Our products</p>
             <h1>From intelligence to intelligent <em>collaboration.</em></h1>
             <p>Practical systems that make humans and AI learn, adapt and win together.</p>
+            <div className="actions">
+              <a className="button button-primary" href="#products">See the products <span>→</span></a>
+              <ContactCTA />
+            </div>
           </motion.div>
           <motion.div className="convergence" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.8, delay: 0.15 }} aria-label="Human and artificial intelligence collaboration">
             <picture>

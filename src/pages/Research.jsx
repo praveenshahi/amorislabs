@@ -4,6 +4,7 @@ import Footer from '../components/Footer.jsx';
 import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
 import AmbientBackground from '../components/AmbientBackground.jsx';
+import ContactCTA from '../components/ContactCTA.jsx';
 
 const THEMES = [
   { icon: 'delegation', title: 'Human State', text: 'How human knowledge, cognition, emotion and context influence interaction outcomes.' },
@@ -33,6 +34,10 @@ export default function Research() {
             <p className="eyebrow"><span /> Our research</p>
             <h1>Understanding how intelligence <em>changes intelligence.</em></h1>
             <p>We study the dynamics of human–AI interaction to design systems where both humans and AI continuously learn and improve.</p>
+            <div className="actions">
+              <a className="button button-primary" href="#questions">See open questions <span>→</span></a>
+              <ContactCTA />
+            </div>
           </motion.div>
           <motion.div className="research-loop" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.15 }} aria-label="Human and AI interaction diagram">
             <div className="loop-side loop-human"><b>Human</b><span>Knowledge<br />Expertise<br />Intent<br />State<br />History</span></div>

@@ -5,6 +5,7 @@ import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
 import BrandMark from '../components/BrandMark.jsx';
 import AmbientBackground from '../components/AmbientBackground.jsx';
+import ContactCTA from '../components/ContactCTA.jsx';
 
 const EXPERIMENTS = [
   { tag: '01 / Interaction intelligence', title: 'Sales Echo', text: 'Learning from the patterns that make human sales conversations work.', status: 'Enterprise pilot', muted: false, href: '/products', linkText: 'View product' },
@@ -36,7 +37,10 @@ export default function Labs() {
             <p className="eyebrow"><span /> AMORIS AI Labs</p>
             <h1>Where questions become <em>working systems.</em></h1>
             <p>We move from research questions to testable interaction models, prototypes and enterprise learning systems.</p>
-            <a className="button button-primary" href="#experiments">Explore the lab <span>→</span></a>
+            <div className="actions">
+              <a className="button button-primary" href="#experiments">Explore the lab <span>→</span></a>
+              <ContactCTA />
+            </div>
           </motion.div>
           <motion.div className="lab-apparatus" initial={{ opacity: 0, scale: 0.96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.15 }} aria-label="AMORIS research process diagram">
             <svg viewBox="0 0 650 440" aria-hidden="true">

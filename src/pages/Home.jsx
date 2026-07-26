@@ -6,6 +6,7 @@ import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
 import AmbientBackground from '../components/AmbientBackground.jsx';
 import AmorisDiagram from '../components/AmorisDiagram.jsx';
+import ContactCTA from '../components/ContactCTA.jsx';
 
 export default function Home() {
   const orbitRef = useRef(null);
@@ -31,6 +32,7 @@ export default function Home() {
             <div className="actions">
               <a className="button button-primary" href="#architecture">Explore the architecture <span>→</span></a>
               <a className="button button-ghost" href="#products">See the products</a>
+              <ContactCTA />
             </div>
             <div className="signal-row" aria-label="Trusted by forward-thinking teams">
               <span>Built for forward-thinking teams</span>
