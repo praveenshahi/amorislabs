@@ -1,2 +1,4 @@
 *.docx
 WhatsApp Image*.jpeg
+node_modules
+dist
