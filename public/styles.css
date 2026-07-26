@@ -86,9 +86,9 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
 .diagram-label{position:absolute;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--text);text-align:center;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;background:rgba(6,6,7,.82);border-radius:3px;padding:3px 7px;backdrop-filter:blur(2px)}
 .label-human{left:68.2%;top:6.6%;font-size:0.72rem;font-weight:600}
 .label-ai-systems{left:68.2%;top:72.6%;font-size:0.72rem;font-weight:600}
-.label-core-pill{position:absolute;left:68%;top:42.5%;transform:translate(-50%,-50%);width:36%;background:rgba(6,6,8,.9);border-radius:16px;padding:8px 10px;text-align:center;pointer-events:none}
-.label-core-title{position:static;transform:none;background:none;padding:0;font-family:var(--display);font-weight:500;text-transform:none;letter-spacing:0;font-size:1rem;line-height:1.28;color:var(--ink);white-space:normal;display:block}
-.label-core-sub{position:static;transform:none;background:none;padding:0;margin-top:3px;font-size:0.6rem;letter-spacing:.06em;display:block}
+.label-core-pill{position:absolute;left:68%;top:42.5%;transform:translate(-50%,-50%);width:38%;background:rgba(6,6,8,.9);border-radius:16px;padding:8px 10px;text-align:center;pointer-events:none}
+.label-core-title{position:static;transform:none;background:none;padding:0;font-family:var(--display);font-weight:600;text-transform:uppercase;letter-spacing:.03em;font-size:1rem;line-height:1.4;color:var(--ink);white-space:normal;display:block}
+.label-core-sub{position:static;transform:none;background:none;padding:0;margin-top:5px;font-size:0.6rem;letter-spacing:.06em;text-transform:none;display:block}
 .label-human-evolves{left:45.3%;top:58.9%;font-size:0.62rem}
 .label-ai-evolves{left:89%;top:58.9%;font-size:0.62rem}
 .label-decisions{left:68.2%;top:92.7%;font-size:0.62rem;font-weight:600}
