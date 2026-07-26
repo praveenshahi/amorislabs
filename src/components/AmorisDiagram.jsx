@@ -16,8 +16,10 @@ export default function AmorisDiagram() {
       </picture>
       <span className="diagram-label label-human">Human</span>
       <span className="diagram-label label-ai-systems">AI systems</span>
-      <span className="diagram-label label-core-title">AMORIS<br />Interaction layer</span>
-      <span className="diagram-label label-core-sub">Observe · Learn · Improve</span>
+      <div className="label-core-pill">
+        <span className="label-core-title">AMORIS<br />Interaction layer</span>
+        <span className="label-core-sub">Observe · Learn · Improve</span>
+      </div>
       <span className="diagram-label label-human-evolves">Human evolves</span>
       <span className="diagram-label label-ai-evolves">AI evolves</span>
       <span className="diagram-label label-decisions">Better decisions</span>

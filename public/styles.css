@@ -65,7 +65,7 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
 .labs-contact .button-primary{color:var(--ink);background:var(--paper)}
 
 /* Hero */
-.hero{display:grid;grid-template-columns:47% 53%;min-height:540px;align-items:center;padding:48px 0 60px;position:relative;z-index:1}
+.hero{display:grid;grid-template-columns:42% 58%;min-height:540px;align-items:center;padding:48px 0 60px;position:relative;z-index:1}
 .eyebrow{font-family:var(--mono);font-size:0.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
 .eyebrow span{display:inline-block;width:18px;height:1px;background:var(--accent);vertical-align:middle;margin-right:8px}
 .hero h1{font-family:var(--display);font-size:clamp(3.2rem,4.8vw,5.4rem);font-weight:500;line-height:1.06;letter-spacing:-.02em;margin:0 0 22px;max-width:600px;color:var(--ink)}
@@ -83,15 +83,16 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
 .entity-orbit{position:relative;min-width:0}
 .amoris-diagram{position:relative;width:100%;aspect-ratio:1600/900}
 .amoris-diagram picture,.amoris-diagram img{display:block;width:100%;height:100%;object-fit:contain}
-.diagram-label{position:absolute;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--text);text-align:center;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none}
-.label-human{left:68.2%;top:6.6%;font-size:0.78rem;font-weight:600}
-.label-ai-systems{left:68.2%;top:72.6%;font-size:0.78rem;font-weight:600}
-.label-core-title{left:68%;top:38%;font-family:var(--display);font-weight:500;text-transform:none;letter-spacing:0;font-size:1.05rem;line-height:1.3;color:var(--ink);white-space:normal}
-.label-core-sub{left:68%;top:47%;font-size:0.66rem;letter-spacing:.06em}
-.label-human-evolves{left:45.3%;top:58.9%;font-size:0.68rem}
-.label-ai-evolves{left:89%;top:58.9%;font-size:0.68rem}
-.label-decisions{left:68.2%;top:92.7%;font-size:0.68rem;font-weight:600}
-@media (max-width:900px){.diagram-label{font-size:0.6rem !important}.label-core-title{font-size:0.85rem !important}}
+.diagram-label{position:absolute;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--text);text-align:center;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;background:rgba(6,6,7,.82);border-radius:3px;padding:3px 7px;backdrop-filter:blur(2px)}
+.label-human{left:68.2%;top:6.6%;font-size:0.72rem;font-weight:600}
+.label-ai-systems{left:68.2%;top:72.6%;font-size:0.72rem;font-weight:600}
+.label-core-pill{position:absolute;left:68%;top:42.5%;transform:translate(-50%,-50%);width:36%;background:rgba(6,6,8,.9);border-radius:16px;padding:8px 10px;text-align:center;pointer-events:none}
+.label-core-title{position:static;transform:none;background:none;padding:0;font-family:var(--display);font-weight:500;text-transform:none;letter-spacing:0;font-size:1rem;line-height:1.28;color:var(--ink);white-space:normal;display:block}
+.label-core-sub{position:static;transform:none;background:none;padding:0;margin-top:3px;font-size:0.6rem;letter-spacing:.06em;display:block}
+.label-human-evolves{left:45.3%;top:58.9%;font-size:0.62rem}
+.label-ai-evolves{left:89%;top:58.9%;font-size:0.62rem}
+.label-decisions{left:68.2%;top:92.7%;font-size:0.62rem;font-weight:600}
+@media (max-width:900px){.diagram-label{font-size:0.56rem !important;padding:2px 5px}.label-core-title{font-size:0.8rem !important}.label-core-pill{width:42%}}
 @media (max-width:680px){.label-human-evolves,.label-ai-evolves{display:none}}
 
 /* Principle strip */
