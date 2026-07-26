@@ -372,15 +372,19 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
 .sales-ui i{display:block;height:116px;background:linear-gradient(166deg,transparent 46%,rgba(181,80,42,.55) 47%,rgba(181,80,42,.55) 49%,transparent 50%);border-bottom:1px solid var(--line-onink)}
 .sales-ui div{font-size:0.71rem;line-height:1.5;position:absolute;right:8px;bottom:17px;background:var(--ink);border:1px solid var(--line-onink);padding:10px;border-radius:5px}
 
-.compound-section{padding:62px 0 66px}
-.compound-flow{display:grid;grid-template-columns:repeat(9,1fr);gap:10px;align-items:stretch}
-.compound-flow article{border:1px solid var(--line-onink);border-radius:6px;padding:14px;min-height:135px}
-.compound-flow article:nth-child(5){background:var(--ink-raised);border-color:var(--accent)}
-.compound-flow article>b{font-family:var(--mono);border:1px solid var(--line-onink);width:18px;height:18px;border-radius:50%;display:grid;place-items:center;font-size:0.59rem;color:var(--muted-onink)}
-.compound-flow article>i{display:block;color:var(--accent);font-size:1.23rem;font-style:normal;margin:9px 0}
-.compound-flow h3{font-family:var(--display);font-weight:500;font-size:0.85rem;margin:0}
-.compound-flow p{color:var(--muted-onink);font-size:0.71rem;line-height:1.5;margin:7px 0}
-.compound-flow>span{align-self:center;color:var(--muted-onink);text-align:center}
+.compound-section{padding:72px 0 78px}
+.compound-flow{display:grid;grid-template-columns:repeat(9,1fr);gap:12px;align-items:stretch}
+.compound-flow article{border:1px solid var(--line-onink);border-radius:8px;padding:20px;min-height:180px;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.compound-flow article:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.35);border-color:var(--accent)}
+.compound-flow article:nth-child(5){background:var(--paper);border-color:var(--accent)}
+.compound-flow article:nth-child(5) *{color:var(--text) !important}
+.compound-flow article:nth-child(5) i{color:var(--accent) !important}
+.compound-flow article:nth-child(5) b{border-color:rgba(255,255,255,.25) !important}
+.compound-flow article>b{font-family:var(--mono);border:1px solid var(--line-onink);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:0.68rem;color:var(--muted-onink)}
+.compound-flow article>i{display:block;color:var(--accent);font-size:1.6rem;font-style:normal;margin:14px 0}
+.compound-flow h3{font-family:var(--display);font-weight:600;font-size:1.15rem;margin:0}
+.compound-flow p{color:var(--muted-onink);font-size:0.85rem;line-height:1.6;margin:10px 0 0}
+.compound-flow>span{align-self:center;color:var(--muted-onink);text-align:center;font-size:1.1rem}
 .outcome-strip{padding:44px 0}
 .outcome-strip>div>div{display:flex;justify-content:space-between;margin-top:28px}
 .outcome-strip b{font-family:var(--display);font-size:1.73rem;font-weight:500;color:var(--ink)}
@@ -471,8 +475,9 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
   .model-grid{grid-template-columns:repeat(3,1fr)}
   .product-cards{grid-template-columns:1fr}
   .product-cards article{min-height:360px}
-  .compound-flow{grid-template-columns:repeat(5,1fr)}
+  .compound-flow{grid-template-columns:repeat(3,1fr);gap:14px}
   .compound-flow>span{display:none}
+  .compound-flow article{min-height:auto}
   .next-grid{grid-template-columns:repeat(2,1fr)}
   .next-grid article:first-child{grid-column:span 2}
   .labs-hero{padding:45px 0}
@@ -502,8 +507,8 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
   .product-tabs button{padding:10px 15px;white-space:nowrap}
   .product-cards article{grid-template-columns:1fr;padding:20px}
   .intel-ui,.sales-ui{min-height:230px}
-  .compound-flow{grid-template-columns:1fr 1fr}
-  .compound-flow article:nth-child(5){grid-column:span 2}
+  .compound-flow{grid-template-columns:1fr;gap:12px}
+  .compound-flow article{min-height:auto;padding:18px}
   .outcome-strip>div>div{display:grid;grid-template-columns:1fr 1fr;gap:25px}
   .next-grid,.next-grid article:first-child{grid-template-columns:1fr;grid-column:auto}
   .products-cta{grid-template-columns:1fr;padding:28px 21px;gap:20px}
