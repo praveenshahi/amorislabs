@@ -105,10 +105,12 @@ body:before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
 .small-title{font-size:1rem;letter-spacing:0;margin-top:-27px;margin-bottom:38px;font-family:var(--sans);font-weight:450;color:var(--muted);text-align:center}
 
 .comparison-grid{display:grid;grid-template-columns:1fr 46px 1fr;align-items:center}
+.comparison-grid>*{min-width:0}
 .comparison-card{background:var(--paper-raised);border:1px solid var(--line);border-radius:6px;padding:28px 28px 22px;min-height:238px;text-align:center;box-shadow:0 10px 26px rgba(26,23,18,.04)}
 .card-kicker{font-family:var(--mono);font-size:.63rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:500;margin:0 0 10px}
 .comparison-card h3{font-family:var(--serif);font-weight:500;font-size:1.15rem;margin:0 0 30px;color:var(--ink)}
-.simple-flow{display:flex;align-items:center;justify-content:space-between;gap:9px}
+.simple-flow{display:flex;flex-wrap:wrap;row-gap:6px;align-items:center;justify-content:space-between;gap:9px}
+.simple-flow>*{min-width:0}
 .simple-flow span{font-size:.7rem;line-height:1.5;color:var(--text)}
 .simple-flow i{font-style:normal;color:var(--muted);font-size:1.05rem}
 .amoris-flow span{color:var(--ink);font-weight:500}
@@ -289,7 +291,7 @@ body:before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
 .state-loop i{font-style:normal;color:var(--accent)}
 .state-loop span{font-size:.68rem;color:var(--muted)}
 .questions-section{background:var(--paper-dim);color:var(--text);padding:64px 0}
-.questions-layout{display:grid;grid-template-columns:36% 64%;gap:54px}
+.questions-layout{display:grid;grid-template-columns:36fr 64fr;gap:54px}
 .questions-layout h2{font:500 2.1rem/1.28 var(--serif);letter-spacing:-.02em;margin:0;color:var(--ink)}
 .questions-layout h2 em{font-style:italic;color:var(--accent)}
 .question-list{display:grid;grid-template-columns:repeat(2,1fr);column-gap:32px}
@@ -322,7 +324,7 @@ body:before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
 .product-tabs button{border:0;color:var(--muted);background:transparent;padding:10px 24px;border-radius:5px;font:500 .66rem var(--mono);letter-spacing:.02em;cursor:pointer;text-transform:uppercase}
 .product-tabs button.active{border:1px solid var(--ink);color:var(--ink);background:var(--paper)}
 .product-cards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.product-cards article{border-radius:8px;min-height:440px;padding:28px;display:grid;grid-template-columns:54% 46%;gap:12px;overflow:hidden;border:1px solid var(--line)}
+.product-cards article{border-radius:8px;min-height:440px;padding:28px;display:grid;grid-template-columns:54fr 46fr;gap:12px;overflow:hidden;border:1px solid var(--line)}
 .product-cards article.is-hidden{display:none}
 .intel-card{background:var(--paper-raised);color:var(--text)}
 .sales-card{background:var(--ink);color:var(--text-onink);border-color:var(--ink)}
@@ -436,7 +438,7 @@ body:before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;o
 .method-grid h3{font-family:var(--serif);font-weight:500;font-size:.9rem;margin:15px 0 10px;color:var(--ink)}
 .method-grid p{font-size:.72rem;color:var(--muted);line-height:1.7}
 .lab-notes{padding:72px 0;display:grid}
-.lab-notes>.shell{display:grid;grid-template-columns:33% 67%;gap:45px}
+.lab-notes>.shell{display:grid;grid-template-columns:33fr 67fr;gap:45px}
 .lab-notes h2{font:500 2.3rem/1.12 var(--serif);letter-spacing:-.02em;margin:0;color:var(--ink)}
 .notes-list article{border-top:1px solid var(--line);padding:18px 0;display:grid;grid-template-columns:135px 1fr 1.3fr;gap:20px}
 .notes-list span{font-family:var(--mono);font-size:.56rem;color:var(--accent);text-transform:uppercase;letter-spacing:.05em}
