@@ -2,13 +2,13 @@ import { useState } from 'react';
 import BrandMark from './BrandMark.jsx';
 
 const NAV = [
-  { label: 'Home', href: 'index.html', key: 'home' },
-  { label: 'Research', href: 'research.html', key: 'research' },
-  { label: 'Products', href: 'products.html', key: 'products' },
-  { label: 'Labs', href: 'labs.html', key: 'labs' },
+  { label: 'Home', href: '/', key: 'home' },
+  { label: 'Research', href: '/research', key: 'research' },
+  { label: 'Products', href: '/products', key: 'products' },
+  { label: 'Labs', href: '/labs', key: 'labs' },
 ];
 
-export default function Header({ active, homeHref = 'index.html' }) {
+export default function Header({ active, homeHref = '/' }) {
   const [open, setOpen] = useState(false);
 
   return (

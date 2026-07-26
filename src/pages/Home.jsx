@@ -103,7 +103,7 @@ export default function Home() {
         <section id="products" className="proof-section">
           <div className="shell">
             <Reveal className="proof-heading">
-              <div><p className="eyebrow">Our first proof of work</p><h2>Enterprise B2C Sales</h2><p>We're validating the architecture in one of the most complex human–AI environments: sales conversations.</p><a href="products.html">Learn more in Products <span>→</span></a></div>
+              <div><p className="eyebrow">Our first proof of work</p><h2>Enterprise B2C Sales</h2><p>We're validating the architecture in one of the most complex human–AI environments: sales conversations.</p><a href="/products">Learn more in Products <span>→</span></a></div>
               <p className="proof-why">Why? Because success depends on nuance, timing, emotion and experience—the very things AI cannot learn from documentation.</p>
             </Reveal>
             <Reveal className="proof-path" delay={0.1}>

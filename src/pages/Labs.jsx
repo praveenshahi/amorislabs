@@ -7,9 +7,9 @@ import BrandMark from '../components/BrandMark.jsx';
 import AmbientBackground from '../components/AmbientBackground.jsx';
 
 const EXPERIMENTS = [
-  { tag: '01 / Interaction intelligence', title: 'Sales Echo', text: 'Learning from the patterns that make human sales conversations work.', status: 'Enterprise pilot', muted: false, href: 'products.html', linkText: 'View product' },
-  { tag: '02 / Trust systems', title: 'Intel Echo', text: 'Making AI decisions more accountable, explainable and auditable.', status: 'Live prototype', muted: false, href: 'products.html', linkText: 'View product' },
-  { tag: '03 / Adaptive organizations', title: 'Memory Graph', text: 'Mapping how interaction evidence becomes reusable organizational memory.', status: 'In research', muted: true, href: 'research.html', linkText: 'Explore research' },
+  { tag: '01 / Interaction intelligence', title: 'Sales Echo', text: 'Learning from the patterns that make human sales conversations work.', status: 'Enterprise pilot', muted: false, href: '/products', linkText: 'View product' },
+  { tag: '02 / Trust systems', title: 'Intel Echo', text: 'Making AI decisions more accountable, explainable and auditable.', status: 'Live prototype', muted: false, href: '/products', linkText: 'View product' },
+  { tag: '03 / Adaptive organizations', title: 'Memory Graph', text: 'Mapping how interaction evidence becomes reusable organizational memory.', status: 'In research', muted: true, href: '/research', linkText: 'Explore research' },
 ];
 
 const METHOD = [

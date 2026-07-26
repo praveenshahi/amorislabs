@@ -1,6 +1,6 @@
 import BrandMark from './BrandMark.jsx';
 
-export default function Footer({ tagline, showMark = false, homeHref = 'index.html', withContactId = false }) {
+export default function Footer({ tagline, showMark = false, homeHref = '/', withContactId = false }) {
   return (
     <footer id={withContactId ? 'contact' : undefined} className="footer">
       <div className="shell footer-inner">

@@ -123,7 +123,7 @@ export default function Research() {
           <div className="shell research-footer-inner">
             <div className="constellation"><Icon name="spark" size={40} /></div>
             <p>This is an ongoing research program.<br />We publish, we learn, we share.</p>
-            <a href="labs.html">See our work in Labs <span>→</span></a>
+            <a href="/labs">See our work in Labs <span>→</span></a>
             <div className="research-stats">
               <b>12<sup>+</sup><small>Active research projects</small></b>
               <b>7<small>Working prototypes</small></b>
