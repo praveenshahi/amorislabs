@@ -9,7 +9,7 @@ export default function AmorisDiagram() {
         <img
           src="/assets/amoris-interaction-diagram.jpg"
           alt=""
-          width="1438"
+          width="1079"
           height="894"
           loading="eager"
         />
