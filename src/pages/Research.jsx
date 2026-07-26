@@ -5,6 +5,7 @@ import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
 import AmbientBackground from '../components/AmbientBackground.jsx';
 import ContactCTA from '../components/ContactCTA.jsx';
+import EvidenceSystemMap from '../components/EvidenceSystemMap.jsx';
 
 const THEMES = [
   { icon: 'delegation', title: 'Human State', text: 'How human knowledge, cognition, emotion and context influence interaction outcomes.' },
@@ -106,6 +107,8 @@ export default function Research() {
             </div>
           </div>
         </section>
+
+        <EvidenceSystemMap />
 
         <section id="questions" className="questions-section">
           <div className="shell">
