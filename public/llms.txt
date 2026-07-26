@@ -21,4 +21,4 @@ AMORIS's central claim: most AI products optimize for response quality (intellig
 ## Company
 
 - [Home](https://amoris.in/): AMORIS AI Labs overview — the interaction-infrastructure thesis, the AMORIS architecture (Observe, Learn, Improve, Remember), and the first proof of work in enterprise B2C sales.
-- Contact: hello@amoris.ai
+- Contact: shahi@amoris.in

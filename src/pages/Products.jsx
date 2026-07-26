@@ -5,6 +5,7 @@ import Footer from '../components/Footer.jsx';
 import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
 import AmbientBackground from '../components/AmbientBackground.jsx';
+import WaitlistForm from '../components/WaitlistForm.jsx';
 
 const TABS = [
   { label: 'All products', filter: 'all' },
@@ -96,7 +97,7 @@ export default function Products() {
                       <ul>
                         <li>Real-time sales copilot</li><li>Win pattern extraction</li><li>Tribal knowledge capture</li><li>Faster onboarding</li>
                       </ul>
-                      <div className="waitlist"><b>Be the first to try our Sales Pilot</b><span>Work email <em>Join waitlist →</em></span></div>
+                      <WaitlistForm />
                     </div>
                     <div className="sales-ui">
                       <p>Up to <b>3.4×</b> win rate improvement<sup>*</sup></p>
@@ -162,7 +163,7 @@ export default function Products() {
           <h2>Let's build the next generation<br />of <em>human-AI collaboration.</em></h2>
           <div>
             <p>Partner with us to make your organization learn faster, decide better and scale smarter.</p>
-            <a className="button dark-button" href="mailto:hello@amoris.ai">Start a conversation <span>→</span></a>
+            <a className="button dark-button" href="mailto:shahi@amoris.in">Start a conversation <span>→</span></a>
           </div>
         </Reveal>
       </main>

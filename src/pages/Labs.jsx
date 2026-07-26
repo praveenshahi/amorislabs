@@ -108,7 +108,7 @@ export default function Labs() {
           <div className="shell">
             <div className="constellation big-constellation"><Icon name="spark" size={56} /></div>
             <div><p className="eyebrow">Work with the lab</p><h2>Have a difficult interaction problem?</h2><p>We partner with teams who want to turn high-value experience into systems that learn.</p></div>
-            <a className="button button-primary" href="mailto:hello@amoris.ai">Talk to the lab <span>→</span></a>
+            <a className="button button-primary" href="mailto:shahi@amoris.in">Talk to the lab <span>→</span></a>
           </div>
         </Reveal>
       </main>

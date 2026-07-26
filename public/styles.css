@@ -79,33 +79,20 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
 .wordmarks b:nth-child(2){font-size:1.29rem}
 .wordmarks b:nth-child(3){font-size:0.97rem}
 
-/* Interaction orbit diagram (home) */
-.interaction-orbit{height:510px;position:relative;min-width:0}
-.orbit-particles{display:none}
-.orbit-lines{position:absolute;inset:0;width:100%;height:100%}
-.orbit-lines path{fill:none;stroke:var(--ink);stroke-width:1;opacity:.28}
-.orbit-lines path.arrow{stroke:var(--accent);stroke-width:1.6;opacity:.8}
-.core-card{position:absolute;top:204px;left:50%;transform:translateX(-50%);width:179px;padding:19px 8px 16px;text-align:center;border:1px solid var(--ink);border-radius:6px;background:var(--paper-raised);box-shadow:0 12px 30px rgba(26,23,18,.08)}
-.core-card svg{width:29px;height:26px;fill:none;stroke:var(--accent);stroke-width:2}
-.core-card strong{display:block;font-family:var(--display);letter-spacing:.04em;font-size:1.12rem;margin-top:8px;color:var(--ink)}
-.core-card span{display:block;font-family:var(--mono);text-transform:uppercase;letter-spacing:.08em;font-size:0.69rem;margin:6px 0 13px;color:var(--accent)}
-.core-card small{font-size:0.74rem;color:var(--muted);line-height:1.5}
-.orbit-node{position:absolute;text-align:center;display:grid;justify-items:center;gap:7px}
-.orbit-node b{font-family:var(--mono);font-size:0.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink)}
-.orbit-node small{font-size:0.8rem;line-height:1.6;color:var(--muted)}
-.node-human{top:15px;left:50%;transform:translateX(-50%)}
-.node-ai{bottom:4px;left:50%;transform:translateX(-50%)}
-.orbit-node i{width:44px;height:44px;border:1px solid var(--ink);border-radius:50%;display:block;position:relative}
-.node-human i:before{content:'';position:absolute;left:16px;top:9px;width:11px;height:11px;border:1.3px solid var(--ink);border-radius:50%}
-.node-human i:after{content:'';position:absolute;left:10px;bottom:8px;width:23px;height:12px;border:1.3px solid var(--ink);border-radius:15px 15px 8px 8px}
-.orbit-node .cube{border-color:var(--accent);border-radius:0;transform:rotate(30deg) skewY(-10deg);width:27px;height:27px;margin:8px}
-.orbit-label{position:absolute;top:215px;display:flex;gap:16px}
-.orbit-label b{font-family:var(--display);font-weight:500;font-size:1.01rem;line-height:1.4;color:var(--ink)}
-.orbit-label b em{color:var(--accent);font-style:italic}
-.orbit-label span{font-size:0.78rem;line-height:1.85;color:var(--muted)}
-.human-label{left:3%;text-align:right;flex-direction:row-reverse}
-.ai-label{right:3%}
-.outcomes{position:absolute;top:353px;left:50%;transform:translateX(-50%);text-align:center;font-family:var(--mono);font-size:0.72rem;letter-spacing:.02em;line-height:1.8;color:var(--muted)}
+/* Hero diagram: real image + real HTML labels overlaid at matching coordinates */
+.entity-orbit{position:relative;min-width:0}
+.amoris-diagram{position:relative;width:100%;aspect-ratio:1600/900}
+.amoris-diagram picture,.amoris-diagram img{display:block;width:100%;height:100%;object-fit:contain}
+.diagram-label{position:absolute;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--text);text-align:center;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none}
+.label-human{left:68.2%;top:6.6%;font-size:0.78rem;font-weight:600}
+.label-ai-systems{left:68.2%;top:72.6%;font-size:0.78rem;font-weight:600}
+.label-core-title{left:68%;top:38%;font-family:var(--display);font-weight:500;text-transform:none;letter-spacing:0;font-size:1.05rem;line-height:1.3;color:var(--ink);white-space:normal}
+.label-core-sub{left:68%;top:47%;font-size:0.66rem;letter-spacing:.06em}
+.label-human-evolves{left:45.3%;top:58.9%;font-size:0.68rem}
+.label-ai-evolves{left:89%;top:58.9%;font-size:0.68rem}
+.label-decisions{left:68.2%;top:92.7%;font-size:0.68rem;font-weight:600}
+@media (max-width:900px){.diagram-label{font-size:0.6rem !important}.label-core-title{font-size:0.85rem !important}}
+@media (max-width:680px){.label-human-evolves,.label-ai-evolves{display:none}}
 
 /* Principle strip */
 .principle{border:1px solid var(--line);border-radius:6px;min-height:60px;display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:26px;position:relative;z-index:2;background:var(--paper-raised)}
@@ -368,8 +355,14 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
 .intel-ui>small{font-family:var(--mono);font-size:0.69rem;color:var(--muted-onink)}
 .waitlist{padding:10px;border:1px solid var(--line-onink);border-radius:6px;display:grid;gap:8px}
 .waitlist b{font-size:0.71rem}
-.waitlist span{border:1px solid var(--line-onink);border-radius:4px;padding:6px;color:var(--muted-onink);font-size:0.72rem}
-.waitlist em{float:right;color:var(--accent);font-style:normal}
+.waitlist span{color:var(--muted-onink);font-size:0.72rem}
+.waitlist-row{display:flex;gap:6px}
+.waitlist-row input{flex:1;min-width:0;border:1px solid var(--line-onink);border-radius:4px;padding:8px;background:transparent;color:var(--text-onink);font-family:var(--sans);font-size:0.72rem}
+.waitlist-row input::placeholder{color:var(--muted-onink)}
+.waitlist-row button{border:1px solid var(--accent);border-radius:4px;padding:8px 10px;background:transparent;color:var(--accent);font-family:var(--mono);font-size:0.65rem;white-space:nowrap;cursor:pointer;transition:background .2s ease,color .2s ease}
+.waitlist-row button:hover:not(:disabled){background:var(--accent);color:var(--text-onink)}
+.waitlist-row button:disabled{opacity:.6;cursor:default}
+.waitlist-error{color:#E27A7A;font-size:0.65rem}
 .sales-ui{position:relative;min-height:300px;padding:20px;background:var(--ink-raised)}
 .sales-ui p{font-size:0.73rem;color:var(--muted-onink)}
 .sales-ui p b{display:block;font-family:var(--display);font-size:2.27rem;color:var(--text-onink);font-weight:500}
@@ -527,3 +520,4 @@ body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);widt
   .big-constellation{display:none}
   .labs-contact .button{justify-self:start}
 }
+

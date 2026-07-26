@@ -12,8 +12,8 @@ export default function Footer({ tagline, showMark = false, homeHref = 'index.ht
           </span>
         </a>
         <p>{tagline}</p>
-        <a className="footer-contact" href="mailto:hello@amoris.ai">
-          hello@amoris.ai <span>↗</span>
+        <a className="footer-contact" href="mailto:shahi@amoris.in">
+          shahi@amoris.in <span>↗</span>
         </a>
       </div>
     </footer>

@@ -4,8 +4,8 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
-import BrandMark from '../components/BrandMark.jsx';
 import AmbientBackground from '../components/AmbientBackground.jsx';
+import AmorisDiagram from '../components/AmorisDiagram.jsx';
 
 export default function Home() {
   const orbitRef = useRef(null);
@@ -40,23 +40,13 @@ export default function Home() {
 
           <motion.div
             ref={orbitRef}
-            className="interaction-orbit"
+            className="entity-orbit"
             style={{ y: orbitY }}
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.2, 0.7, 0.3, 1] }}
-            aria-label="AMORIS interaction model diagram"
           >
-            <svg className="orbit-lines" viewBox="0 0 650 580" aria-hidden="true">
-              <path d="M185 147C255 53 390 53 476 147" /><path d="M492 170c88 85 90 207 2 300" /><path d="M466 475c-77 84-211 90-294 2" /><path d="M157 455c-83-86-79-214 3-300" />
-              <path className="arrow" d="m463 145 18 4-10 15" /><path className="arrow" d="m493 445-5 18-16-10" /><path className="arrow" d="m191 474-18-4 10-15" /><path className="arrow" d="m156 165 5-18 16 10" />
-            </svg>
-            <div className="orbit-node node-human"><i><Icon name="human" size={26} /></i><b>Human</b><small>Intent · Expertise · Context<br />Feedback · Decisions</small></div>
-            <div className="orbit-node node-ai"><i className="cube"><Icon name="cube" size={20} /></i><b>AI systems</b><small>Models · Tools · Memory<br />Planning · Confidence</small></div>
-            <div className="core-card"><BrandMark className="core-mark" /><strong>AMORIS</strong><span>Interaction Layer</span><small>Observe · Learn · Improve</small></div>
-            <div className="orbit-label human-label"><b>Human<br /><em>evolves</em></b><span>Knowledge<br />Judgment<br />Expertise<br />Context<br />Intent</span></div>
-            <div className="orbit-label ai-label"><b><em>AI</em><br />evolves</b><span>Behavior<br />Confidence<br />Planning<br />Memory<br />Tools</span></div>
-            <div className="outcomes">Outputs · Suggestions<br />Actions · Insights</div>
+            <AmorisDiagram />
           </motion.div>
         </section>
 
