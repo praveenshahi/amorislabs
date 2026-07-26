@@ -4,6 +4,7 @@ import Footer from '../components/Footer.jsx';
 import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
 import BrandMark from '../components/BrandMark.jsx';
+import AmbientBackground from '../components/AmbientBackground.jsx';
 
 const EXPERIMENTS = [
   { tag: '01 / Interaction intelligence', title: 'Sales Echo', text: 'Learning from the patterns that make human sales conversations work.', status: 'Enterprise pilot', muted: false, href: 'products.html', linkText: 'View product' },
@@ -27,6 +28,7 @@ const NOTES = [
 export default function Labs() {
   return (
     <>
+      <AmbientBackground />
       <Header active="labs" />
       <main>
         <section className="labs-hero shell">

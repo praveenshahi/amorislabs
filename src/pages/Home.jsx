@@ -5,6 +5,7 @@ import Footer from '../components/Footer.jsx';
 import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
 import BrandMark from '../components/BrandMark.jsx';
+import AmbientBackground from '../components/AmbientBackground.jsx';
 
 export default function Home() {
   const orbitRef = useRef(null);
@@ -13,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="page-glow glow-one" />
+      <AmbientBackground />
       <Header active="home" homeHref="#top" />
 
       <main id="top">

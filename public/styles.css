@@ -1,18 +1,34 @@
 :root{
-  --paper:#F6F2E9;--paper-raised:#FBF8F2;--paper-dim:#EFE9DA;
-  --ink:#1A1712;--ink-raised:#241F18;--ink-dim:#2C271F;
-  --text:#211D17;--muted:#6B6355;--muted-onink:#B9B2A2;--text-onink:#F5F1E8;
-  --accent:#B5502A;--accent-quiet:#3A4F49;
-  --line:#DFD9C9;--line-onink:rgba(246,242,233,.16);
+  --paper:#0A0A0B;--paper-raised:#141414;--paper-dim:#101010;
+  --ink:#F2F2EF;--ink-raised:#050505;--ink-dim:#050505;
+  --text:#E6E5E1;--muted:#8A8985;--muted-onink:#6B6963;--text-onink:#121210;
+  --accent:#FFFFFF;--accent-quiet:#79776F;
+  --line:rgba(255,255,255,.14);--line-onink:rgba(10,10,10,.14);
   --display:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;
   --sans:'Inter',ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,monospace;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--text);font-family:var(--sans);overflow-x:hidden;position:relative}
-body:before{content:'';position:fixed;inset:0;z-index:9999;pointer-events:none;opacity:.035;mix-blend-mode:multiply;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+body{margin:0;background:var(--paper);color:var(--text);font-family:var(--sans);overflow-x:hidden;position:relative;cursor:none}
+body:before{content:'';position:fixed;inset:0;z-index:9998;pointer-events:none;opacity:.05;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .shell{width:min(1180px,calc(100% - 64px));margin-inline:auto}
+
+/* Ambient background: aurora blobs + cursor spotlight, monochrome, mouse-reactive */
+#aurora-bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden}
+.aurora-blob{position:absolute;border-radius:50%;will-change:transform}
+.aurora-a{width:60vw;height:55vh;top:-15vh;left:-8vw;background:radial-gradient(ellipse,rgba(255,255,255,.10) 0%,transparent 68%);filter:blur(80px);animation:aurora-drift-a 24s ease-in-out infinite alternate}
+.aurora-b{width:50vw;height:48vh;top:10vh;right:-10vw;background:radial-gradient(ellipse,rgba(255,255,255,.07) 0%,transparent 65%);filter:blur(90px);animation:aurora-drift-b 30s ease-in-out infinite alternate-reverse}
+.aurora-c{width:55vw;height:60vh;bottom:-18vh;left:10vw;background:radial-gradient(ellipse,rgba(255,255,255,.06) 0%,transparent 65%);filter:blur(95px);animation:aurora-drift-c 27s ease-in-out infinite alternate}
+@keyframes aurora-drift-a{0%{transform:translate(0,0)}50%{transform:translate(10vw,8vh)}100%{transform:translate(4vw,14vh)}}
+@keyframes aurora-drift-b{0%{transform:translate(0,0)}50%{transform:translate(-9vw,5vh)}100%{transform:translate(-4vw,11vh)}}
+@keyframes aurora-drift-c{0%{transform:translate(0,0)}50%{transform:translate(-8vw,-9vh)}100%{transform:translate(6vw,-5vh)}}
+body:after{content:'';position:fixed;left:var(--mx,50vw);top:var(--my,50vh);width:460px;height:460px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(255,255,255,.05) 0%,transparent 70%);pointer-events:none;z-index:-1}
+.cursor-dot{width:7px;height:7px;background:var(--accent);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);top:0;left:0}
+.cursor-ring{width:28px;height:28px;border:1px solid rgba(255,255,255,.4);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);top:0;left:0;transition:width .25s,height .25s,border-color .25s}
+.cursor-ring.is-hover{width:40px;height:40px;border-color:rgba(255,255,255,.7)}
+@media (pointer:coarse){.cursor-dot,.cursor-ring{display:none}body{cursor:auto}}
+@media (prefers-reduced-motion:reduce){.aurora-blob{animation:none}}
 
 /* Header / nav */
 .site-header{height:96px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:3}

@@ -4,6 +4,7 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
+import AmbientBackground from '../components/AmbientBackground.jsx';
 
 const TABS = [
   { label: 'All products', filter: 'all' },
@@ -33,6 +34,7 @@ export default function Products() {
 
   return (
     <>
+      <AmbientBackground />
       <Header active="products" />
       <main>
         <section className="products-hero shell">

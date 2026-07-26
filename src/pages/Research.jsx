@@ -3,6 +3,7 @@ import Header from '../components/Header.jsx';
 import Footer from '../components/Footer.jsx';
 import Reveal from '../components/Reveal.jsx';
 import Icon from '../components/Icon.jsx';
+import AmbientBackground from '../components/AmbientBackground.jsx';
 
 const THEMES = [
   { icon: 'delegation', title: 'Human State', text: 'How human knowledge, cognition, emotion and context influence interaction outcomes.' },
@@ -24,6 +25,7 @@ const QA = [
 export default function Research() {
   return (
     <>
+      <AmbientBackground />
       <Header active="research" />
       <main>
         <section className="research-hero shell">
